@@ -9,3 +9,10 @@ Some useful tips to help you get started:
     npm start
 
 Open a browser and visit localhost:3000
+
+
+Also, you can run a local server with the following way:
+
+    nodemon express/app
+
+Open a browser and visit localhost:3001
