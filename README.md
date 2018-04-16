@@ -1,4 +1,4 @@
-## Task 1 (Core concepts lecture
+## Task 1 (Core concepts lecture)
 
 Some useful tips to help you get started:
 1. Check out the repository
