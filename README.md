@@ -1,18 +1,16 @@
-## Task 1 (Core concepts lecture)
+## Task 2 (Webpack lecture)
 
-Some useful tips to help you get started:
 1. Check out the repository
 2. To inspect the site, you can select project folder and run a local server:
 
-    npm install
+    *npm install*
     
-    npm start
+    *npm run start*
 
-Open a browser and visit localhost:3000
+3. To make build please use the following command:
 
+    *npm run dev*  (for dev configuration)
 
-Also, you can run a local server with the following way:
-
-    nodemon express/app
+    *npm run prod*  (for prod configuration)
 
 Open a browser and visit localhost:3001

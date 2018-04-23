@@ -8,11 +8,11 @@ class ReactComponent extends React.Component {
             <h1 className="searchTitle">Find your movie</h1>
             <input className="searchField" placeholder="What do you need to find?"/>
             <p className="movies">
-            <img src="meet_the_parents.jpeg"/>
-            <img src="bonnie_and_clyde.jpg"/>
-            <img src="me_before_you.jpg"/>
-            <img src="notebook.jpg"/>
-            <img src="book_thief.jpg"/>
+            <img src="./images/meet_the_parents.jpg"/>
+            <img src="./images/bonnie_and_clyde.jpg"/>
+            <img src="./images/me_before_you.jpg"/>
+            <img src="./images/notebook.jpg"/>
+            <img src="./images/book_thief.jpg"/>
             </p>
         </div>
       );
