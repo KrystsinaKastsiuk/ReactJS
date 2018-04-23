@@ -1,4 +1,4 @@
-## Task 1 (Core concepts lecture)
+## Task 2 (Webpack lecture)
 
 Some useful tips to help you get started:
 1. Check out the repository
@@ -6,13 +6,12 @@ Some useful tips to help you get started:
 
     npm install
     
-    npm start
+    npm run start
 
-Open a browser and visit localhost:3000
+3. For building of the bundle.js file please use the command
 
+    *npm run dev*  (for dev configuration)
 
-Also, you can run a local server with the following way:
-
-    nodemon express/app
+    *npm run prod*  (for prod configuration)
 
 Open a browser and visit localhost:3001
