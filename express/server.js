@@ -4,7 +4,7 @@ var path = require('path');
 var webpack = require('webpack');
 var webpackDevMiddleware = require('webpack-dev-middleware');
 var webpackHotMiddleware = require('webpack-hot-middleware');
-var webpackConfig = require('../webpack.config');
+var webpackConfig = require('../webpack.dev.config');
 var http = require('http');
 var movies = require('./movies');
 
