@@ -13,15 +13,15 @@ class ReactComponent extends React.Component {
       <h1 className="searchTitle">Find your movie</h1>
       <input className="searchField" placeholder="What do you need to find?"/>
       <p className="movies">
-        <img src="./components/images/meet_the_parents.jpg"/>
-        <img src="./components/images/me_before_you.jpg"/>
-        <img src="./components/images/bonnie_and_clyde.jpg"/>
-        <img src="./components/images/notebook.jpg"/>
-        <img src="./components/images/book_thief.jpg"/>
+        <img src="./components/images/meet_the_parents.jpg" alt="parents"/>
+        <img src="./components/images/me_before_you.jpg" alt="me before you"/>
+        <img src="./components/images/bonnie_and_clyde.jpg" alt="bonnie and clyde"/>
+        <img src="./components/images/notebook.jpg" alt="notebook"/>
+        <img src="./components/images/book_thief.jpg" alt="book"/>
       </p>
     </div>
     );
   } 
 }
-  
-  export default ReactComponent;
+
+export default ReactComponent;

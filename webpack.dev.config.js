@@ -22,18 +22,18 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            plugins: ["transform-react-jsx"],
+            plugins: ['transform-react-jsx'],
             presets: ['env']
           }
         }
       }, 
       {
         test: /\.css$/,
-        use: ["style-loader", "css-loader"]
+        use: ['style-loader', 'css-loader']
       },
       {
-        test: /\.(png|jpg)$/,  
-        loader: "file-loader",
+        test: /\.(png|jpg)$/,
+        loader: 'file-loader',
         options: {
           name: '[path][name].[ext]?[hash]'
         }
