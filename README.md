@@ -1,4 +1,4 @@
-# Task 2 (Components lecture)
+# Task 3 (Components lecture)
 
 1. Check out the repository
 2. To inspect the site, you can select project folder and run a local server:
