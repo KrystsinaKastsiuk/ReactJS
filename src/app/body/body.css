@@ -1,0 +1,10 @@
+.listMovies {
+    background-color: rgb(235, 235, 235);
+}
+
+.movies img {
+    margin: 0;
+    padding: 20px;
+    height: 280px;
+    width: 200px;
+}
