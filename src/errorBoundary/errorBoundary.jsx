@@ -8,11 +8,9 @@ class ErrorBoundary extends Component {
     };
   }
 
-  componentDidCatch(error, info) {
+  componentDidCatch() {
     // Display fallback UI
     this.setState({ hasError: true });
-    // Error reporting service
-    logErrorToMyService(error, info);
   }
 
   render() {

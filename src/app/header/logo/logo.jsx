@@ -1,12 +1,11 @@
 import React from 'react';
-import Logo from './logo/logo';
-import SearchComponent from './searchField/search';
+import './images/logo.png';
+import './logo.css';
 
 const ReactComponent = () => {
   return (
     <div>
-      <Logo />
-      <SearchComponent />
+      <img src="./app/header/logo/images/logo.png" alt="logo" />
     </div>
   );
 };

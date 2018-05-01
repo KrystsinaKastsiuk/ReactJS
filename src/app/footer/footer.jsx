@@ -1,5 +1,5 @@
 import React from 'react';
-import LegalFooter from './legalFooter.jsx';
+import LegalFooter from './legalFooter';
 import './footer.css';
 
 const FunctionalComponents = () => {

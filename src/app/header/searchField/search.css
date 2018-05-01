@@ -1,3 +1,12 @@
+.search {
+    display: block;
+    background-color: rgb(235, 235, 235);
+}
+
+.searchField {
+    display: block;
+}
+
 .searchTitle {
     color: rgb(102, 102, 102);
     margin: 0 0 0 120px;
@@ -6,7 +15,7 @@
     font-size: 1.5em; 
 }
 
-.searchField {
+.searchInput {
     margin: 20px 20px 20px 0;
     padding: 10px 16px;
     height: 46px;
@@ -16,4 +25,53 @@
     border-radius: 2px;
     box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
     font-size: 1.2em;
+    position: relative;
+}
+
+.searchButton {
+    background-color: transparent;
+    outline: none; /* Для синий ободки */
+    border: 0;
+    background: transparent;
+    position: relative;
+    top: 25px;
+    right: 95px;
+}
+
+.searchImage {
+    height: 65px;
+    width:  65px;
+    margin: 0 auto;
+}
+
+.searchButtons {
+    display: block;
+    text-align: left;
+    position: relative;
+    left: 100px;
+    padding-bottom: 20px; 
+}
+
+.searchBy {
+    display: inline;
+    position: relative;
+    font-size: 1.3em;
+    margin-right: 40px; 
+    margin-left: 20px; 
+}
+
+.searchByTitle {
+    position: relative;
+    font-size: 1em;
+    width: 100px;
+    text-align: center;
+    height: 40px;
+}
+
+.searchByGenre {
+    position: relative;
+    font-size: 1em; 
+    width: 100px;
+    text-align: center;
+    height: 40px;
 }
