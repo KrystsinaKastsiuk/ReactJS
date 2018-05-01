@@ -1,10 +1,10 @@
 import React from 'react';
-import './methods.css';
+import './footer.css';
 
 class ReactPureComponent extends React.PureComponent {
   render() {
     return (
-      <div className="footer">
+      <div>
         <p className="legalFooter">© 2018 Show Inc. and Showtime Digital Inc. All rights reserved. THE MOVIE CHANNEL and related marks are registered trademarks.</p>
       </div>
     );
@@ -12,3 +12,4 @@ class ReactPureComponent extends React.PureComponent {
 };
 
 export default ReactPureComponent;
+
