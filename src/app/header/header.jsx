@@ -1,14 +1,14 @@
 import React from 'react';
 import Logo from './logo/logo';
-import SearchComponent from './searchField/search';
+import Search from './searchField/search';
 
-const ReactComponent = () => {
+const Header = () => {
   return (
     <div>
       <Logo />
-      <SearchComponent />
+      <Search />
     </div>
   );
 };
 
-export default ReactComponent;
+export default Header;

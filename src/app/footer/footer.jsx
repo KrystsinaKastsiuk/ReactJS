@@ -2,7 +2,7 @@ import React from 'react';
 import LegalFooter from './legalFooter';
 import './footer.css';
 
-const FunctionalComponents = () => {
+const Footer = () => {
   return (
     <div className="footer">
       <p>
@@ -20,4 +20,4 @@ const FunctionalComponents = () => {
   );
 };
 
-export default FunctionalComponents;
+export default Footer;

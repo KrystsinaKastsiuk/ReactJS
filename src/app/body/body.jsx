@@ -6,7 +6,7 @@ import './images/me_before_you.jpg';
 import './images/notebook.jpg';
 import './images/book_thief.jpg';
 
-const ReactComponent = () => {
+const Body = () => {
   return (
     <div className="listMovies">
       <p className="movies">
@@ -20,4 +20,4 @@ const ReactComponent = () => {
   );
 };
 
-export default ReactComponent;
+export default Body;

@@ -2,7 +2,7 @@ import React from 'react';
 import './search.css';
 import './images/search-icon.png';
 
-const ReactComponent = () => {
+const Search = () => {
   return (
     <div className="search">
       <form className="searchField">
@@ -23,4 +23,4 @@ const ReactComponent = () => {
   );
 };
 
-export default ReactComponent;
+export default Search;
