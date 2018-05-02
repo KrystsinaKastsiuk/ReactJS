@@ -2,7 +2,7 @@ import React from 'react';
 import './images/logo.png';
 import './logo.css';
 
-const ReactComponent = () => {
+const Logo = () => {
   return (
     <div>
       <img src="./app/header/logo/images/logo.png" alt="logo" />
@@ -10,4 +10,4 @@ const ReactComponent = () => {
   );
 };
 
-export default ReactComponent;
+export default Logo;
