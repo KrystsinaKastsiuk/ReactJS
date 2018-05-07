@@ -1,4 +1,4 @@
-# Task 3 (Components lecture)
+# Task 4 (Testing lecture)
 
 1. Check out the repository
 2. To inspect the site, you can select project folder and run a local server:
@@ -14,3 +14,7 @@
     *npm run prod*  (for prod configuration)
 
 4. Open a browser and visit localhost:3001
+
+5. To run the test:
+
+    *npm run test*
