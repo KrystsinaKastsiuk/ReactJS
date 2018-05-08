@@ -1,13 +1,11 @@
 import React from 'react';
-import './images/logo.png';
+// import './images/logo.png';
 import './logo.css';
 
-const Logo = () => {
-  return (
-    <div>
-      <img src="./app/header/logo/images/logo.png" alt="logo" />
-    </div>
-  );
-};
+const Logo = () => (
+  <div>
+    {/* <img src="./app/header/logo/images/logo.png" alt="logo" /> */}
+  </div>
+);
 
 export default Logo;

@@ -1,7 +1,9 @@
 .listMovies {
     background-color: rgb(235, 235, 235);
 }
-
+.movies {
+    margin: 0;
+}
 .movies img {
     margin: 0;
     padding: 20px;
