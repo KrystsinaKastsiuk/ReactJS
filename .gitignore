@@ -6,6 +6,7 @@
 package-lock.json
 
 # testing
+cypress.json
 
 # production
 /build

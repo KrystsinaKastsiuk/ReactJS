@@ -8,15 +8,14 @@ import Search from './searchField/search';
 describe('Header', () => {
   const wrapper = shallow(<Header />);
 
-  it('has a logo', () => {
+  it('should render to static HTML for logo', () => {
     expect(wrapper.find(Logo).exists()).toBe(true);
   });
 
-  it('has a search', () => {
-    expect(wrapper.find(Search).exists()).toBe(true);
+  it('should has a search', () => {
+    expect(wrapper.contains(<Search />)).toBe(true);
   });
 });
-
 
 test('matches snapshot', () => {
   const tree = renderer.create(<Header />).toJSON();

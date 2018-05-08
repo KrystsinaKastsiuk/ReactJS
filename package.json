@@ -7,7 +7,7 @@
     "transform": {
       ".*": "./node_modules/jest-css-modules"
     },
-    "setupTestFrameworkScriptFile": "./src/test/setupTests.js"
+    "setupTestFrameworkScriptFile": "./src/enzyme/setupTests.js"
   },
   "scripts": {
     "test": "jest",
