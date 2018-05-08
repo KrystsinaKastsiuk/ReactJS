@@ -22,3 +22,5 @@
     *npm run test:coverage* (for test coverage)
 
     *npm run test:watch* (for test watch)
+
+    *npm run cypress:open* (for e2e testing)
