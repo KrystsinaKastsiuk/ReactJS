@@ -1,5 +1,9 @@
-describe('My First Test', () => {
-  it('Does not do much!', () => {
-    expect(true).to.equal(true);
+describe('The Home Page', () => {
+  beforeEach( () => {
+    cy.exec('npm run start');
+  });
+
+  it('successfully loads', () => {
+    cy.visit('/');
   });
 });

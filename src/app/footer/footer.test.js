@@ -6,7 +6,7 @@ import LegalFooter from './legalFooter';
 describe('Footer', () => {
   const wrapper = shallow(<Footer />);
 
-  it('has a leaglFooter', () => {
+  it('should has a leaglFooter', () => {
     expect(wrapper.find(LegalFooter).exists()).toBe(true);
   });
 });

@@ -3,10 +3,13 @@
 # dependencies
 /node_modules
 /built
+/coverage
+/cypress
 package-lock.json
 
 # testing
 cypress.json
+*.snap
 
 # production
 /build
