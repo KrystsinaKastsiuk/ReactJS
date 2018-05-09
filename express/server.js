@@ -10,9 +10,9 @@ var movies = require('./movies');
 
 var compiler = webpack(webpackConfig);
 var app = express();
-var port = 3001;
+var port = 3000;
 
-app.set('port', 3001);
+app.set('port', 3000);
 
 // Middleware
 
