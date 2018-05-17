@@ -1,5 +1,7 @@
 .listMovies {
     background-color: rgb(235, 235, 235);
+    max-width: 1200px;
+    margin: 0 auto;
 }
 .movies {
     margin: 0;
