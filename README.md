@@ -1,4 +1,4 @@
-# Task 4 (Flux + Redux lecture)
+# Task 5 (Flux + Redux lecture)
 
 1. Check out the repository
 2. To inspect the site, you can select project folder and run a local server:
