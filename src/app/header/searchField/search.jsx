@@ -4,20 +4,14 @@ import './search.css';
 
 const Search = () => (
   <div className="search">
-    <form className="searchField">
-      <h1 className="searchTitle">Find your movie</h1>
-      <label>
-        <input type="text" className="searchInput" placeholder="What do you need to find?" />
-      </label>
-      <button className="searchButton" type="submit">
-        {/* <img className="searchImage" src="./app/header/searchField/images/search-icon.png" alt="search" /> */}
-      </button>
-    </form>
-    <form className="searchButtons">
+    <input type="text" className="searchInput formControl" placeholder="Search for movies" />
+    <span className="searchIcon" />
+
+    {/* <form className="searchButtons">
       <p className="searchBy">Search by</p>
       <button className="searchByTitle" type="submit">Title</button>
       <button className="searchByGenre" type="submit">Genre</button>
-    </form>
+    </form> */}
   </div>
 );
 
