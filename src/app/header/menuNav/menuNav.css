@@ -15,7 +15,7 @@
 .menuNavItemLink {
     padding: 14px 20px!important;
     padding-bottom: 10px!important;
-    color: #d5d5d5!important;
+    color: rgb(142, 140, 140);
     position: relative;
     display: block;
     line-height: 30px;
@@ -25,4 +25,5 @@
     overflow: hidden;
     text-overflow: ellipsis;
     max-height: 60px;
+    font-size: 20px;
 }
