@@ -43,8 +43,9 @@
     display: inline;
     position: relative;
     font-size: 1.3em;
-    margin-right: 40px; 
+    margin-right: 15px; 
     margin-left: 20px; 
+    color: rgb(185, 185, 185);
 }
 
 .searchByTitle {
@@ -52,7 +53,9 @@
     font-size: 1em;
     width: 100px;
     text-align: center;
-    height: 40px;
+    height: 40px;    
+    border: 1px solid #ccc;
+    border-radius: 20px;
 }
 
 .searchByGenre {
@@ -61,4 +64,6 @@
     width: 100px;
     text-align: center;
     height: 40px;
+    border: 1px solid #ccc;
+   border-radius: 20px;
 }
