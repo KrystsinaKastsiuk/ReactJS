@@ -8,4 +8,3 @@ const LegalFooter = () => (
 );
 
 export default LegalFooter;
-

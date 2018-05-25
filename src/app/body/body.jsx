@@ -6,7 +6,7 @@ import './images/me_before_you.jpg';
 import './images/notebook.jpg';
 import './images/book_thief.jpg';
 
-const Body = () => (
+const SearchResult = () => (
   <div className="listMovies">
     <p className="movies">
       <img src="./app/body/images/meet_the_parents.jpg" alt="parents" />
@@ -18,4 +18,4 @@ const Body = () => (
   </div>
 );
 
-export default Body;
+export default SearchResult;
