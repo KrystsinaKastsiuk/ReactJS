@@ -1,6 +1,8 @@
 .logo {
-    background-color: rgb(248, 248, 248);
-    margin: 0;
-    border: rgb(20, 20, 20);
+    float: left;
+    border: none;
     text-align: left;
+    padding-left: 15px;
+    padding-right: 20px;
+    height: 46px;
 }

@@ -1,23 +1,15 @@
-import React from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 import './search.css';
-// import './images/search-icon.png';
+import Filters from './filters/filters';
+import * as actions from '../../../app/store/actions/actions';
 
 const Search = () => (
   <div className="search">
-    <form className="searchField">
-      <h1 className="searchTitle">Find your movie</h1>
-      <label>
-        <input type="text" className="searchInput" placeholder="What do you need to find?" />
-      </label>
-      <button className="searchButton" type="submit">
-        {/* <img className="searchImage" src="./app/header/searchField/images/search-icon.png" alt="search" /> */}
-      </button>
-    </form>
-    <form className="searchButtons">
-      <p className="searchBy">Search by</p>
-      <button className="searchByTitle" type="submit">Title</button>
-      <button className="searchByGenre" type="submit">Genre</button>
-    </form>
+    <input type="text" className="searchInput formControl" placeholder="Search for movies" />
+    <span className="searchIcon" clicked={() => this.props.requestMovies(this.props.query)} name="Search"/>
+    <Filters />
   </div>
 );
 

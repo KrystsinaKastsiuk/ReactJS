@@ -4,16 +4,26 @@ import './footer.css';
 
 const Footer = () => (
   <div className="footer">
-    <p>
-      <span>FAQ</span>
-      <span>Privacy</span>
-      <span>Terms of Use</span>
-      <span>Cookie Preferences</span>
-      <span>Corporate Information</span>
-      <span>Media Center</span>
-      <span>Help Center</span>
-      <span>Contact Us</span>
-    </p>
+    <ul className="menuFooter">
+      <li className="menuFooterList">
+        <a className="menuFooterItem" href="/">FAQ</a>
+      </li>
+      <li className="menuFooterList">
+        <a className="menuFooterItem" href="/">Privacy</a>
+      </li>
+      <li className="menuFooterList">
+        <a className="menuFooterItem" href="/">Terms of Use</a>
+      </li>
+      <li className="menuFooterList">
+        <a className="menuFooterItem" href="/">Media Center</a>
+      </li>
+      <li className="menuFooterList">
+        <a className="menuFooterItem" href="/">Help Center</a>
+      </li>
+      <li className="menuFooterList">
+        <a className="menuFooterItem" href="/">Contact Us</a>
+      </li>
+    </ul>
     <LegalFooter />
   </div>
 );

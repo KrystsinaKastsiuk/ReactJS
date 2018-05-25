@@ -1,0 +1,38 @@
+.additionalFilters {
+    position: relative;
+    text-align: center;
+    top: 20px;
+}
+
+.searchByReleaseDate {
+    font-size: 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: #e1e1e1;
+    padding: 10px 30px;
+}
+
+.sortBy{
+    display: inline;
+    position: relative;
+    font-size: 1.3em;
+    margin-right: 10px; 
+    margin-left: -30px; 
+    color: rgb(185, 185, 185);
+}
+
+.searchByTitle {
+    font-size: 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: #e1e1e1;
+    padding: 10px 30px;
+}
+
+.searchByGenre {
+    font-size: 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: #e1e1e1;
+    padding: 10px 30px;
+}
