@@ -1,6 +1,6 @@
 import * as React from 'react';
 import './about.css';
-import '../images/meet_the_parents.jpg';
+import './meet_the_parents.jpg';
 
 class About extends React.Component {
 
@@ -8,7 +8,7 @@ class About extends React.Component {
         return (
             <div className="containerMovie">
                 <div className="imageMovies">
-                    <img src="./app/components/images/meet_the_parents.jpg" alt="parents" />
+                    <img src="./app/components/about/meet_the_parents.jpg" alt="parents" />
                 </div>
                 <div className="informationAboutMovies">
                     <h1 className="titleMovies">Title {this.props.match.params.name}</h1>
