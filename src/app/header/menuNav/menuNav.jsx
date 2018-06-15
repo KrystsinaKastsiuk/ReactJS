@@ -1,18 +1,19 @@
 import React from 'react';
 import './menuNav.css';
+import { NavLink } from 'react-router-dom';
 
 const MenuNav = () => (
   <div className="menuNav">
     <ul>
       <li className="menuNavItem">
-        <a className="menuNavItemLink" href="/">
-          <span>New</span>
-        </a>
+        <NavLink to="/" exact className="menuNavItemLink">
+          <span>Home</span>
+        </NavLink>
       </li>
       <li className="menuNavItem">
-        <a className="menuNavItemLink" href="/">
-          <span>Popular</span>
-        </a>
+        <NavLink to="/fgdfg" className="menuNavItemLink">
+          <span>Not Found</span>
+        </NavLink>
       </li>
     </ul>
   </div>

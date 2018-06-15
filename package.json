@@ -16,7 +16,7 @@
     "cypress:open": "cypress open",
     "dev": "webpack --config webpack.dev.config.js",
     "prod": "webpack --config webpack.prod.config.js",
-    "start": "node express/server.js",
+    "start": "nodemon express/server.js",
     "lint": "eslint ."
   },
   "author": "Krystsina Kastsiuk",
@@ -69,8 +69,9 @@
     "react-dom": "^16.2.0",
     "react-hot-loader": "^4.1.1",
     "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
     "react-test-renderer": "^16.3.2",
-    "redux-devtools-extension": "^2.13.2",
-    "redux": "^1.0.0-rc"
+    "redux": "^1.0.0-rc",
+    "redux-devtools-extension": "^2.13.2"
   }
 }

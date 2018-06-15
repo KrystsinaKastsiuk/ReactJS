@@ -5,10 +5,21 @@
 }
 .movies {
     margin: 0;
+    display: flex
 }
 .movies img {
     margin: 0;
     padding: 20px;
     height: 280px;
     width: 200px;
+}
+
+.active {
+    border: 1px red solid;
+}
+
+.listOfImagesContainer {
+    display: flex;
+    flex-flow: column;
+    width: 240px;
 }
