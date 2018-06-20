@@ -1,27 +1,27 @@
 import React from 'react';
 import LegalFooter from './legalFooter';
-import './footer.css';
+import styles from './footer.css';
 
 const Footer = () => (
-  <div className="footer">
-    <ul className="menuFooter">
-      <li className="menuFooterList">
-        <a className="menuFooterItem" href="/">FAQ</a>
+  <div className={styles.footer}>
+    <ul className={styles.menuFooter}>
+      <li className={styles.menuFooterList}>
+        <a className={styles.menuFooterItem} href="/">FAQ</a>
       </li>
-      <li className="menuFooterList">
-        <a className="menuFooterItem" href="/">Privacy</a>
+      <li className={styles.menuFooterList}>
+        <a className={styles.menuFooterItem} href="/">Privacy</a>
       </li>
-      <li className="menuFooterList">
-        <a className="menuFooterItem" href="/">Terms of Use</a>
+      <li className={styles.menuFooterList}>
+        <a className={styles.menuFooterItem} href="/">Terms of Use</a>
       </li>
-      <li className="menuFooterList">
-        <a className="menuFooterItem" href="/">Media Center</a>
+      <li className={styles.menuFooterList}>
+        <a className={styles.menuFooterItem} href="/">Media Center</a>
       </li>
-      <li className="menuFooterList">
-        <a className="menuFooterItem" href="/">Help Center</a>
+      <li className={styles.menuFooterList}>
+        <a className={styles.menuFooterItem} href="/">Help Center</a>
       </li>
-      <li className="menuFooterList">
-        <a className="menuFooterItem" href="/">Contact Us</a>
+      <li className={styles.menuFooterList}>
+        <a className={styles.menuFooterItem} href="/">Contact Us</a>
       </li>
     </ul>
     <LegalFooter />

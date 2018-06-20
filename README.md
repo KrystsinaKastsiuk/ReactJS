@@ -1,4 +1,4 @@
-# Task 6 (Routing lecture)
+# Task 7 (Server Side Rendering lecture)
 
 1. Check out the repository
 2. To inspect the site, you can select project folder and run a local server:
@@ -13,7 +13,7 @@
 
     *npm run prod*  (for prod configuration)
 
-4. Open a browser and visit localhost:3001
+4. Open a browser and visit localhost:8000
 
 5. To run the test:
 

@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
-import * as actions from '../../../store/actions/actions';
-import './filters.css';
+// import * as actions from '../../../store/actions/actions';
+import styles from './filters.css';
 
 const Filters = () => (
-  <div className="additionalFilters">
-    <form className="searchButtons">
-      <p className="sortBy">Sort by</p>
-      <button className="searchByReleaseDate" onClick={() => props.requestMovies({ param: 'sortBy', value: 'release_date' })}>Release date</button>
+  <div className={styles.additionalFilters}>
+    <form className={styles.searchButtons}>
+      <p className={styles.sortBy}>Sort by</p>
+      <button className={styles.searchByReleaseDate} onClick={() => props.requestMovies({ param: 'sortBy', value: 'release_date' })}>Release date</button>
     </form>
     <form>
-      <span className="searchBy">Search by</span>
-      <button className="searchByTitle" name="Title" clicked={() => this.props.updateParameter('searchBy', 'title')}>Title</button>
-      <button className="searchByGenre" name="Genre" clicked={() => this.props.updateParameter('searchBy', 'genres')}>Genre</button>
+      <span className={styles.searchBy}>Search by</span>
+      <button className={styles.searchByTitle} name="Title" clicked={() => this.props.updateParameter('searchBy', 'title')}>Title</button>
+      <button className={styles.searchByGenre} name="Genre" clicked={() => this.props.updateParameter('searchBy', 'genres')}>Genre</button>
     </form>
   </div>
 );

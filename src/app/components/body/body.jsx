@@ -1,34 +1,34 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import './body.css';
-import '../images/meet_the_parents.jpg';
-import '../images/bonnie_and_clyde.jpg';
-import '../images/me_before_you.jpg';
-import '../images/notebook.jpg';
-import '../images/book_thief.jpg';
+import styles from './body.css';
+import meet_the_parents from '../images/meet_the_parents.jpg';
+import bonnie_and_clyde from '../images/bonnie_and_clyde.jpg';
+import me_before_you from '../images/me_before_you.jpg';
+import notebook from '../images/notebook.jpg';
+import book_thief from '../images/book_thief.jpg';
 
 class SearchResult extends React.Component {
 
   render() {
       return (
-        <div className="listMovies">
+        <div className={styles.listMovies}>
           {this.props.children}
-          <p className="movies">
+          <p className={styles.movies}>
             {/* NavLink вместо Link - для CSS */}
             <NavLink to="/about/meet_the_parents" activeClassName="active">
-              <p className="listOfImagesContainer"><img src="./app/components/images/meet_the_parents.jpg" alt="parents" />Meet the parents</p>
+              <p className={styles.listOfImagesContainer}><img src={meet_the_parents} alt="parents" />Meet the parents</p>
             </NavLink>
             <NavLink to="/about/me_before_you">
-              <p className="listOfImagesContainer"><img src="./app/components/images/me_before_you.jpg" alt="me before you" />Me before you</p>
+              <p className={styles.listOfImagesContainer}><img src={me_before_you} alt="me before you" />Me before you</p>
             </NavLink>
             <NavLink to="/about/bonnie_and_clyde">
-              <p className="listOfImagesContainer"><img src="./app/components/images/bonnie_and_clyde.jpg" alt="bonnie and clyde" />Bonnie and clyde</p>
+              <p className={styles.listOfImagesContainer}><img src={bonnie_and_clyde} alt="bonnie and clyde" />Bonnie and clyde</p>
             </NavLink>
             <NavLink to="/about/notebook">
-              <p className="listOfImagesContainer"><img src="./app/components/images/notebook.jpg" alt="notebook" />Notebook</p>
+              <p className={styles.listOfImagesContainer}><img src={notebook} alt="notebook" />Notebook</p>
             </NavLink>
             <NavLink to="/error">
-              <p className="listOfImagesContainer"><img src="./app/components/images/book_thief.jpg" alt="book" />Error</p>
+              <p className={styles.listOfImagesContainer}><img src={book_thief} alt="book" />Error</p>
             </NavLink>
           </p>
         </div>

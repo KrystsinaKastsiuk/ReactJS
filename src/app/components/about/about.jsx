@@ -1,18 +1,18 @@
 import * as React from 'react';
-import './about.css';
-import './meet_the_parents.jpg';
+import styles from './about.css';
+import meet_the_parents from '../images/meet_the_parents.jpg';
 
 class About extends React.Component {
 
     render() {
         return (
-            <div className="containerMovie">
-                <div className="imageMovies">
-                    <img src="./app/components/about/meet_the_parents.jpg" alt="parents" />
+            <div className={styles.containerMovie}>
+                <div className={styles.imageMovies}>
+                    <img src={meet_the_parents} alt="parents" />
                 </div>
-                <div className="informationAboutMovies">
-                    <h1 className="titleMovies">Title {this.props.match.params.name}</h1>
-                    <div className="descriptionMovie">
+                <div className={styles.informationAboutMovies}>
+                    <h1 className={styles.titleMovies}>Title {this.props.match.params.name}</h1>
+                    <div className={styles.descriptionMovie}>
                         <p>A small group of former classmates organize an elaborate, annual game of tag that requires some to travel all over the country.</p>
                     </div>
                 </div>
