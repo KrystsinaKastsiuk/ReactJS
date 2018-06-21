@@ -1,8 +1,4 @@
-import React from 'react';
 import { shallow } from 'enzyme';
-// import renderer from 'react-test-renderer';
-// import 'styled-components-test-utils';
-import App from './App';
 import './App.css';
 import Header from './header/header';
 import Body from './body/body';
