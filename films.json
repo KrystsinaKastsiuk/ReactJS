@@ -1,9 +1,0 @@
-{
-  "films": [
-    {"id": 1, "name": "Meet the parents", "description": "Meet the parents description", "img": "../img/meet_the_parents.jpg", "short": "meet_the_parents"},
-    {"id": 2, "name": "Me before you", "description": "Me before you description", "img": "../img/me_before_you.jpg", "short": "me_before_you"},
-    {"id": 3, "name": "Bonnie and Clyde", "description": "Bonnie and Clyde description", "img": "../img/bonnie_and_clyde.jpg", "short": "bonnie_and_clyde"},
-    {"id": 4, "name": "Notebook", "description": "Notebook description", "img": "../img/notebook.jpg", "short": "notebook"},
-    {"id": 5, "name": "The book trief", "description": "The book trief description", "img": "../img/book_thief.jpg", "short": "book_thief"}
-  ]
-}

@@ -1,17 +1,17 @@
 import React from 'react';
-import styles from './menuNav.css';
+import './menuNav.css';
 import { NavLink } from 'react-router-dom';
 
 const MenuNav = () => (
-  <div className={styles.menuNav}>
+  <div className="menuNav">
     <ul>
-      <li className={styles.menuNavItem}>
-        <NavLink to="/" exact className={styles.menuNavItemLink}>
+      <li className="menuNavItem">
+        <NavLink to="/" exact className="menuNavItemLink">
           <span>Home</span>
         </NavLink>
       </li>
-      <li className={styles.menuNavItem}>
-        <NavLink to="/fgdfg" className={styles.menuNavItemLink}>
+      <li className="menuNavItem">
+        <NavLink to="/fgdfg" className="menuNavItemLink">
           <span>Not Found</span>
         </NavLink>
       </li>

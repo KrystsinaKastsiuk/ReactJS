@@ -1,6 +1,5 @@
 import axios from 'axios';
 import { store } from '../../../index';
-import data from '../data';
 
 export const updateParameter = (parameter, value) => {
   return {
@@ -21,8 +20,7 @@ export const requestMovies = updatedParameter => (dispatch) => {
 
   const params = Object.entries(store.getState().query);
 
-  //axios.get(`http://react-cdp-api.herokuapp.com/movies?${params}`).then(res => dispatch(showMovies(res.data)));
-  dispatch(showMovies(data));
+  axios.get(`http://react-cdp-api.herokuapp.com/movies?${params}`).then(res => dispatch(showMovies(res.data)));
 };
 
 export const SHOW_MOVIES = 'SHOW_MOVIES';

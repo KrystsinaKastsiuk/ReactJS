@@ -1,4 +1,4 @@
-# Task 7 (Server Side Rendering lecture)
+# Task 8 (Useful libraries lecture)
 
 1. Check out the repository
 2. To inspect the site, you can select project folder and run a local server:

@@ -1,10 +1,10 @@
 import React from 'react';
-import logo from './images/logo.png';
-import styles from './logo.css';
+import './images/logo.png';
+import './logo.css';
 
 const Logo = () => (
-  <div className={styles.logo}>
-    <img src={logo} alt="logo" />
+  <div className="logo">
+    <img src="./app/header/logo/images/logo.png" alt="logo" />
   </div>
 );
 

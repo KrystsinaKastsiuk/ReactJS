@@ -1,49 +1,24 @@
-import React, { Component } from 'react';
-import styles from './about.css';
-import PropTypes from 'prop-types';
+import * as React from 'react';
+import './about.css';
+import '../images/meet_the_parents.jpg';
 
-class About extends Component {
-    static propTypes = {
-        fetchUserById: PropTypes.func.isRequired,
-        id: PropTypes.string.isRequired,
-        user: PropTypes.shape({
-          id: PropTypes.number,
-          name: PropTypes.string,
-          description: PropTypes.string,
-          img: PropTypes.string,
-          short: PropTypes.string
-        }),
-    };
-    
-    static defaultProps = {
-        user: {"id": undefined, "name": undefined, "description": undefined, "img": undefined, "short": undefined},
-    };
+class About extends React.Component {
 
-    componentDidMount() {
-        console.log("mount");
-        this.props.fetchUserById(this.props.id);
-    }
-
-
-  render() {
-
-    const { loading, user } = this.props;
-    console.log("render");
-
-    return (
-        <div className={styles.containerMovie}>
-            <div className={styles.imageMovies}>
-                <img src={user.img} alt={user.short} />
-            </div>
-            <div className={styles.informationAboutMovies}>
-                <h1 className={styles.titleMovies}>Title: {user.name}</h1>
-                <div className={styles.descriptionMovie}>
-                    <p>{user.description}</p>
+    render() {
+        return (
+            <div className="containerMovie">
+                <div className="imageMovies">
+                    <img src="./app/components/images/meet_the_parents.jpg" alt="parents" />
+                </div>
+                <div className="informationAboutMovies">
+                    <h1 className="titleMovies">Title {this.props.match.params.name}</h1>
+                    <div className="descriptionMovie">
+                        <p>A small group of former classmates organize an elaborate, annual game of tag that requires some to travel all over the country.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    );
-  }
+        );
+    }
 }
 
 export default About;
