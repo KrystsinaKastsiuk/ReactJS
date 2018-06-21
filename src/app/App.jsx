@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Header from './header/header';
-import Body from './components/body/body';
-import About from './components/about/about';
+ import Body from './components/body';
+// import Body from './components/body/body';
+import About from './components/about';
 import Footer from './footer/footer';
 import ErrorBoundary from '../errorBoundary/errorBoundary';
 import styles from './App.css';
@@ -26,7 +27,7 @@ const App = ({
               <Body>
                 <Switch>
                   <Route path="/" exact />
-                  <Route path="/about/:name" component={About} />
+                  <Route path="/about/:id" component={About} />
                     <Route path="/users/:userId" component={UserPage} />
                     <Route path="/users" component={UsersPage} />
                   <Route path="*" component={NotFound} />

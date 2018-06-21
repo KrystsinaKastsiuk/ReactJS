@@ -28,7 +28,7 @@ export function fetchUsers() {
   return (dispatch) => {
     dispatch(fetchUsersAction());
 
-    fetch('http://jsonplaceholder.typicode.com/users')
+    fetch('http://localhost:3000/films')
       .then(res => res.json())
       .then(users => dispatch(updateUsers(users)));
   };
@@ -38,9 +38,9 @@ export function fetchUserById(userId) {
   return (dispatch) => {
     dispatch(fetchUserByIdAction());
 
-    fetch(`http://jsonplaceholder.typicode.com/users/${userId}`)
+    fetch(`http://localhost:3000/films/${userId}`)
       .then(res => res.json())
-      .then(users => dispatch(updateCurrentUser(users)));
+      .then(users => {console.log("fetchUserById"); dispatch(updateCurrentUser(users))});
   };
 }
 

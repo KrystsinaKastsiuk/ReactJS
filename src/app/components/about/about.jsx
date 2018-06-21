@@ -1,24 +1,49 @@
-import * as React from 'react';
+import React, { Component } from 'react';
 import styles from './about.css';
-import meet_the_parents from '../images/meet_the_parents.jpg';
+import PropTypes from 'prop-types';
 
-class About extends React.Component {
+class About extends Component {
+    static propTypes = {
+        fetchUserById: PropTypes.func.isRequired,
+        id: PropTypes.string.isRequired,
+        user: PropTypes.shape({
+          id: PropTypes.number,
+          name: PropTypes.string,
+          description: PropTypes.string,
+          img: PropTypes.string,
+          short: PropTypes.string
+        }),
+    };
+    
+    static defaultProps = {
+        user: {"id": undefined, "name": undefined, "description": undefined, "img": undefined, "short": undefined},
+    };
 
-    render() {
-        return (
-            <div className={styles.containerMovie}>
-                <div className={styles.imageMovies}>
-                    <img src={meet_the_parents} alt="parents" />
-                </div>
-                <div className={styles.informationAboutMovies}>
-                    <h1 className={styles.titleMovies}>Title {this.props.match.params.name}</h1>
-                    <div className={styles.descriptionMovie}>
-                        <p>A small group of former classmates organize an elaborate, annual game of tag that requires some to travel all over the country.</p>
-                    </div>
+    componentDidMount() {
+        console.log("mount");
+        this.props.fetchUserById(this.props.id);
+    }
+
+
+  render() {
+
+    const { loading, user } = this.props;
+    console.log("render");
+
+    return (
+        <div className={styles.containerMovie}>
+            <div className={styles.imageMovies}>
+                <img src={user.img} alt={user.short} />
+            </div>
+            <div className={styles.informationAboutMovies}>
+                <h1 className={styles.titleMovies}>Title: {user.name}</h1>
+                <div className={styles.descriptionMovie}>
+                    <p>{user.description}</p>
                 </div>
             </div>
-        );
-    }
+        </div>
+    );
+  }
 }
 
 export default About;

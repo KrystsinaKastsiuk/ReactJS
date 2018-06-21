@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import styles from './body.css';
 import meet_the_parents from '../images/meet_the_parents.jpg';
@@ -6,31 +6,37 @@ import bonnie_and_clyde from '../images/bonnie_and_clyde.jpg';
 import me_before_you from '../images/me_before_you.jpg';
 import notebook from '../images/notebook.jpg';
 import book_thief from '../images/book_thief.jpg';
+import PropTypes from 'prop-types';
 
-class SearchResult extends React.Component {
+class SearchResult extends Component {
+  static propTypes = {
+    fetchUsers: PropTypes.func.isRequired,
+    users: PropTypes.arrayOf(PropTypes.shape({})),
+  };
+  static defaultProps = {
+    users: [],
+  };
+
+  componentDidMount() {
+    this.props.fetchUsers();
+  }
+
 
   render() {
+
+    const { loading, users } = this.props;
+
       return (
         <div className={styles.listMovies}>
           {this.props.children}
-          <p className={styles.movies}>
+          <div className={styles.movies}>
             {/* NavLink вместо Link - для CSS */}
-            <NavLink to="/about/meet_the_parents" activeClassName="active">
-              <p className={styles.listOfImagesContainer}><img src={meet_the_parents} alt="parents" />Meet the parents</p>
-            </NavLink>
-            <NavLink to="/about/me_before_you">
-              <p className={styles.listOfImagesContainer}><img src={me_before_you} alt="me before you" />Me before you</p>
-            </NavLink>
-            <NavLink to="/about/bonnie_and_clyde">
-              <p className={styles.listOfImagesContainer}><img src={bonnie_and_clyde} alt="bonnie and clyde" />Bonnie and clyde</p>
-            </NavLink>
-            <NavLink to="/about/notebook">
-              <p className={styles.listOfImagesContainer}><img src={notebook} alt="notebook" />Notebook</p>
-            </NavLink>
-            <NavLink to="/error">
-              <p className={styles.listOfImagesContainer}><img src={book_thief} alt="book" />Error</p>
-            </NavLink>
-          </p>
+            {users.map(item => (
+              <NavLink to={`/about/${item.id}`} activeClassName="active" key={item.id}>
+                <p className={styles.listOfImagesContainer}><img src={item.img} alt={item.short} />{item.name}</p>
+              </NavLink>
+            ))}
+          </div>
         </div>
       );
   }

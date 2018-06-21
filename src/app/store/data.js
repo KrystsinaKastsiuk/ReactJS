@@ -1,9 +1,7 @@
 var data = [
-    {id: 1, title: "Overboard", description: "This is one comment", release: "2018"},
-    {id: 2, title: "Adrift", description: "This is *another* comment", release: "2018"},
-    {id: 2, title: "Meet the parents", description: "This is *another* comment", release: "2016"},
-    {id: 2, title: "Me before you", description: "This is *another* comment", release: "2017"},
-    {id: 2, title: "Bonnie and Clyde", description: "This is *another* comment", release: "2013"},
-    {id: 2, title: "Notebook", description: "This is *another* comment", release: "2014"},
-    {id: 2, title: "The book trief", description: "This is *another* comment", release: "2010"},
+    {id: 1, title: "Meet the parents", description: "This is *another* comment", img: "../images/meet_the_parents.jpg"},
+    {id: 2, title: "Me before you", description: "This is *another* comment", img: "../images/me_before_you.jpg"},
+    {id: 3, title: "Bonnie and Clyde", description: "This is *another* comment", img: "../images/bonnie_and_clyde.jpg"},
+    {id: 4, title: "Notebook", description: "This is *another* comment", img: "../images/notebook.jpg"},
+    {id: 5, title: "The book trief", description: "This is *another* comment", img: "../images/book_thief.jpg"},
   ];
