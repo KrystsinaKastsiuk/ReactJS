@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './about.css';
 
-class About extends Component {
+class About extends React.Component {
     static propTypes = {
       fetchUserById: PropTypes.func.isRequired,
       id: PropTypes.string.isRequired,

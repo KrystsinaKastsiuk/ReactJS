@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import styles from './body.css';
-// import meet_the_parents from '../images/meet_the_parents.jpg';
-// import bonnie_and_clyde from '../images/bonnie_and_clyde.jpg';
-// import me_before_you from '../images/me_before_you.jpg';
-// import notebook from '../images/notebook.jpg';
-// import book_thief from '../images/book_thief.jpg';
+import meet_the_parents from '../images/meet_the_parents.jpg';
+import bonnie_and_clyde from '../images/bonnie_and_clyde.jpg';
+import me_before_you from '../images/me_before_you.jpg';
+import notebook from '../images/notebook.jpg';
+import book_thief from '../images/book_thief.jpg';
 
 class SearchResult extends Component {
   static propTypes = {
@@ -23,7 +23,7 @@ class SearchResult extends Component {
 
 
   render() {
-    const { loading, users } = this.props;
+    const { users } = this.props;
 
     return (
         <div className={styles.listMovies}>

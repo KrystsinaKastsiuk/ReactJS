@@ -1,3 +1,5 @@
+import { List } from 'immutable';
+
 // Actions
 const FETCH_USERS = 'users/FETCH';
 const FETCH_USER_BY_ID = 'users/FETCH_BY_ID';
@@ -56,13 +58,12 @@ export const usersReduces = (state = INITIAL_STATE, action = {}) => {
     case FETCH_USERS:
       return {
         ...state,
-        loading: true,
       };
     case UPDATE:
       return {
         ...state,
         loading: false,
-        items: action.payload,
+        items: List(action.payload),
       };
     case UPDATE_CURRENT_USER:
       return {
